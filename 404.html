@@ -16,7 +16,7 @@
         }
         
         header {
-            background-color: #1c1c1c;
+            background-color: #1c1c1c00;
             padding: 10px 0;
             position: fixed;
             width: 100%;
@@ -60,7 +60,19 @@
             justify-content: center;
             height: 100vh;
         }
+
+        .lost-text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
         
+        .lost-text h1 {
+            font-size: x-large
+        }
+
         h1, h2 {
             margin-bottom: 20px;
         }
@@ -168,6 +180,12 @@
 
     <main>
         <section id="home" class="section">
+            <div class="lost-text">
+                <h1>It apears you are lost.</h1>
+                <a href="index.html">
+                    <button>Return Home</button>
+                </a>
+            </div>
             <div class="hero-content">
                 <h1>It apears you are lost.</h1>
                 <a href="index.html">
