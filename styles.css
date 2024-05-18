@@ -197,7 +197,7 @@ input:focus, textarea:focus {
 }
 
 footer {
-    background-color: #1c1c1c;
+    background-color: #1c1c1c00;
     color: #fff;
     text-align: center;
     padding: 20px 0;
