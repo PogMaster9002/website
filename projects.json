@@ -1,0 +1,13 @@
+[
+    {
+      "title": "Project 1",
+      "description": "Description of blog 1.",
+      "link": "blog-posts/blogpost1.html"
+    },
+    {
+      "title": "Project 2",
+      "description": "Description of blog 2.",
+      "link": "blog-posts/blogpost2.html"
+    }
+  ]
+  
