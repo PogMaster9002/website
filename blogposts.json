@@ -1,0 +1,15 @@
+[
+    {
+      "title": "1-5-24: Title Here",
+      "date": "2024-01-05",
+      "description": "Description of blog 1.",
+      "link": "blog-posts/blogpost1.html"
+    },
+    {
+      "title": "Title Here",
+      "date": "2024-01-05",
+      "description": "Description of blog 2.",
+      "link": "blog-posts/blogpost2.html"
+    }
+  ]
+  
