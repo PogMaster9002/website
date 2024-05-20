@@ -57,7 +57,7 @@ function fetchGames() {
     fetch('games.json')
         .then(response => response.json())
         .then(data => {
-            const projectList = document.querySelector('.project-list-games');
+            const gameList = document.querySelector('.project-list-games');
             if (gameList) {
                 gameList.innerHTML = ''; // Clear existing content
                 data.forEach(project => {
