@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     fetchBlogPosts();
     fetchProjects();
+    fetchGames();
 });
 
 function fetchBlogPosts() {
@@ -50,6 +51,29 @@ function fetchProjects() {
         .catch(error => console.error('Error fetching projects:', error));
 }
 
+function fetchGames() {
+    // Assuming you have a similar JSON structure for projects, 
+    // you can implement fetching and displaying projects like this
+    fetch('games.json')
+        .then(response => response.json())
+        .then(data => {
+            const projectList = document.querySelector('.project-list-games');
+            if (projectList) {
+                projectList.innerHTML = ''; // Clear existing content
+                data.forEach(project => {
+                    const projectItem = document.createElement('a');
+                    projectItem.href = project.link;
+                    projectItem.className = 'project-item-games';
+                    projectItem.innerHTML = `
+                        <h3>${project.title}</h3>
+                        <p>${project.description}</p>
+                    `;
+                    gameList.appendChild(projectGame);
+                });
+            }
+        })
+        .catch(error => console.error('Error fetching games:', error));
+}
 
 // Smooth scrolling
 document.querySelectorAll('.smooth-scroll').forEach(anchor => {

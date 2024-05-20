@@ -196,6 +196,57 @@ input:focus, textarea:focus {
     border: 1px solid #1db954;
 }
 
+
+/* Project List Container for Projects */
+.project-list-games {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Individual Project Item for Projects */
+.project-item-games {
+    background-color: #1c1c1c;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    width: calc(33% - 40px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+    color: #fff;
+    text-decoration: none;
+}
+
+.project-item-games:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.project-item-games h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.project-item-games p {
+    margin: 0 0 10px 0;
+}
+
+/* Responsive adjustments for Projects */
+@media (max-width: 768px) {
+    .project-item-games {
+        width: calc(50% - 40px);
+    }
+}
+
+@media (max-width: 480px) {
+    .project-item-games {
+        width: calc(100% - 40px);
+    }
+}
+
+
 footer {
     background-color: #1c1c1c00;
     color: #fff;
