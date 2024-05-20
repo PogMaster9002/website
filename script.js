@@ -68,7 +68,7 @@ function fetchGames() {
                         <h3>${project.title}</h3>
                         <p>${project.description}</p>
                     `;
-                    gameList.appendChild(projectGame);
+                    gameList.appendChild(gameItem);
                 });
             }
         })
