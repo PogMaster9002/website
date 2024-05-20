@@ -60,13 +60,13 @@ function fetchGames() {
             const gameList = document.querySelector('.project-list-games');
             if (gameList) {
                 gameList.innerHTML = ''; // Clear existing content
-                data.forEach(project => {
+                data.forEach(game => {
                     const gameItem = document.createElement('a');
-                    gameItem.href = project.link;
+                    gameItem.href = game.link;
                     gameItem.className = 'project-item-games';
                     gameItem.innerHTML = `
-                        <h3>${project.title}</h3>
-                        <p>${project.description}</p>
+                        <h3>${game.title}</h3>
+                        <p>${game.description}</p>
                     `;
                     gameList.appendChild(gameItem);
                 });
